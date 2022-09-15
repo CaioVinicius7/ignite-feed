@@ -16,48 +16,50 @@ const posts = [
     author: {
       avatarUrl: "https://github.com/CaioVinicius7.png",
       name: "Caio Vinícius",
-      role: "Web Developer"
+      role: "Web Developer",
     },
     content: [
       {
         type: "paragraph",
-        content: "Fala galera 👋"
+        content: "Fala galera 👋",
       },
       {
         type: "paragraph",
-        content: "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀"
+        content:
+          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
       },
       {
         type: "link",
-        content: "👉 jane.design/doctorcare"
-      }
+        content: "👉 jane.design/doctorcare",
+      },
     ],
-    publishedAt: new Date("2022-06-06 17:00:00")
+    publishedAt: new Date("2022-06-06 17:00:00"),
   },
   {
     id: "48d41055-9610-482b-b6f1-14989f070528",
     author: {
       avatarUrl: "https://github.com/pedroserodio1.png",
       name: "Pedro Henrique",
-      role: "Web Developer"
+      role: "Web Developer",
     },
     content: [
       {
         type: "paragraph",
-        content: "Fala galera 👋"
+        content: "Fala galera 👋",
       },
       {
         type: "paragraph",
-        content: "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀"
+        content:
+          "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
       },
       {
         type: "link",
-        content: "👉 jane.design/doctorcare"
-      }
+        content: "👉 jane.design/doctorcare",
+      },
     ],
-    publishedAt: new Date("2022-06-04 16:00:00")
-  }
-]
+    publishedAt: new Date("2022-06-04 16:00:00"),
+  },
+];
 
 function App() {
   return (
@@ -70,13 +72,13 @@ function App() {
         <main>
           {posts.map((post) => {
             return (
-              <Post 
+              <Post
                 key={post.id}
                 author={post.author}
                 content={post.content as Content[]}
                 publishedAt={post.publishedAt}
               />
-            )
+            );
           })}
         </main>
       </div>
@@ -84,4 +86,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
